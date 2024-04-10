@@ -22,6 +22,8 @@ import NestedComponent from './Day4/NestingComponent/NestedComponent';
 import SampleUseEffect from './Day5/SampleUseEffect';
 import CounterEffect from './Day5/CounterEffect';
 import ApiEffect from './Day5/ApiEffect';
+import TimeEffect from './Day5/TimeEffect';
+import LocalStorageEffect from './Day5/LocalStorageEffect';
 // class App extends React.Component {
 
 //   render(){
@@ -111,11 +113,15 @@ function App(){
        <hr/>
        <NestedComponent/> */}
 
-       <SampleUseEffect/>
-       <hr/>
-       <CounterEffect/>
-       <hr/>
-       <ApiEffect/>
+       {/* <SampleUseEffect/>
+       <hr/> */}
+        {/* <CounterEffect/> 
+       <hr/> */}
+       {/* <ApiEffect/>
+       <hr/> 
+       <TimeEffect/>
+       <hr/> */}
+       <LocalStorageEffect/>
     </>
   )
 }

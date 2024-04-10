@@ -23,9 +23,23 @@ function ApiEffect() {
   return (
     <div>
         <h1>Posts</h1>
-        {/* {posts && posts.map(post => 
-            <h2>{post.id} - {post.title}</h2>
-        )} */}
+        <table border={1}>
+          <tr>
+            <th>id</th>
+            <th>userId</th>
+            <th>title</th>
+            <th>body</th>
+          </tr>
+          { posts && posts.map(post => (
+            <tr key={post.id}>
+              <td>{post.id}</td>
+              <td>{post.userId}</td>
+              <td>{post.title}</td>
+              <td>{post.body}</td>
+            </tr>
+        ))}
+        </table>
+        
     </div>
   )
 }
